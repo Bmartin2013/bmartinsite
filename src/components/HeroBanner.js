@@ -4,7 +4,7 @@ import mydata from '../data/metadata.json'
 
 const HeroBanner = () => {
     return (
-        <section class="hero is-medium is-link">
+        <section class="hero is-medium">
             <div class="hero-body">
                 <p class="title">
                     {mydata.title}
