@@ -1,26 +1,22 @@
 import React from "react";
 import 'bulma/css/bulma.min.css';
 import ReactFullpage from '@fullpage/react-fullpage';
+import FullPageSection from "./src/components/FullPageSection";
+import HeroBanner from "./src/components/HeroBanner";
 
 const App = () => {
-    return (
-        <ReactFullpage
-        //fullpage options
-        scrollingSpeed = {1000} /* Options here */
-    
-        render={({ state, fullpageApi }) => {
-          return (
-            <ReactFullpage.Wrapper>
-              <div className="section">
-                <p>Section 1 (welcome to fullpage.js)</p>
-              </div>
-              <div className="section">
-                <p>Section 2</p>
-              </div>
-            </ReactFullpage.Wrapper>
-          );
-        }}
-      />
-    )
+  return (
+    <ReactFullpage
+      render={({ state, fullpageApi }) => {
+        return (
+          <ReactFullpage.Wrapper>
+            <FullPageSection children={<HeroBanner/>} />
+            <FullPageSection children={<p>Section 2</p>} />
+            <FullPageSection children={<p>Section 3</p>} />
+          </ReactFullpage.Wrapper>
+        );
+      }}
+    />
+  )
 }
 export default App;
