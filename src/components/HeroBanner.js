@@ -4,12 +4,12 @@ import mydata from '../data/metadata.json'
 
 const HeroBanner = () => {
     return (
-        <section class="hero is-medium">
+        <section class="hero is-medium is-spaced">
             <div class="hero-body">
-                <p class="title">
+                <p class="title is-spaced">
                     {mydata.title}
                 </p>
-                <p class="subtitle">
+                <p class="subtitle is-4">
                     {mydata.subtitle}
                 </p>
             </div>
