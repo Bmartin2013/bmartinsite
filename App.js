@@ -2,7 +2,7 @@ import React from "react";
 import 'bulma/css/bulma.min.css';
 import './src/styles/styles.css'
 import ReactFullpage from '@fullpage/react-fullpage';
-import SectionWrapper from "./src/components/SectionWrapper";
+// TODO: It seems that I can add a dynamic import or something similar.
 import Home from "./src/sections/Home";
 import AboutMe from "./src/sections/AboutMe";
 
