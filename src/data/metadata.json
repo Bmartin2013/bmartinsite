@@ -1,4 +1,26 @@
 {
     "title": "Meet Barbie, the code artisan",
-    "subtitle": "A code artisan gets involved on every code line, always finding a way to do the things better and better until it reaches to its final masterpiece."
+    "subtitle": "A code artisan gets involved on every code line, always finding a way to do the things better and better until it reaches to its final masterpiece.",
+    "socialMedia": {
+        "medium": {
+            "title": "Check out my blogposts",
+            "link": "https://medium.com/@barbiemartnez"
+        },
+        "github": {
+            "title": "Let's share some code",
+            "link": "https://github.com/bmartin2013"
+        },
+        "email": {
+            "title": "Email me!",
+            "link": "mailto:barmartinezc@gmail.com"
+        },
+        "linkedin": {
+            "title": "Hope we can stay in touch soon",
+            "link": "https://www.linkedin.com/in/barbaracmartinez/"
+        },
+        "drive": {
+            "title": "Hey recruiter! check out my stats",
+            "link": "https://www.linkedin.com/in/barbaracmartinez/"
+        }
+    }
 }
