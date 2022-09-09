@@ -5,6 +5,8 @@ import Icon from '@mdi/react'
 
 const FooterBtn = ({ btnMetadata }) => {
     const { link, title, icon } = btnMetadata
+    if (!btnMetadata) return null;
+    
     return (
         <a class="span-icon" href={link} target="_blank" rel="noopener noreferrer">
             <span>

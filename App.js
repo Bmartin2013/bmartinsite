@@ -4,8 +4,8 @@ import './src/styles/styles.css'
 import ReactFullpage from '@fullpage/react-fullpage';
 import FullPageSection from "./src/components/FullPageSection";
 import HeroBanner from "./src/components/HeroBanner";
-import Footer from "./src/components/Footer";
-import data  from './src/data/metadata.json'
+// Should I load all the data at the beginning of the app or whenever I need it?
+import { title, subtitle } from './src/data/metadata.json'
 
 
 const App = () => {
@@ -14,10 +14,9 @@ const App = () => {
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
-            <FullPageSection children={<HeroBanner {...data} />} />
+            <FullPageSection children={<HeroBanner title={title} subtitle={subtitle} />} />
             <FullPageSection children={<p>Section 2</p>} />
             <FullPageSection children={<p>Section 3</p>} />
-            <Footer {...data.socialMedia} />
           </ReactFullpage.Wrapper>
         );
       }}
