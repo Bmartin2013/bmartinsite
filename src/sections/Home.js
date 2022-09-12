@@ -1,7 +1,7 @@
 import React from "react";
 import { title, subtitle } from "../data/metadata.json"
 import SectionWrapper from "../components/SectionWrapper";
-import HeroBanner from "../components/HeroBanner";
+import HeroBanner from "../components/HeroBanner/HeroBanner";
 
 const Home = () => (
     // TODO: pass children respecting DOM hierarchy (not as a prop)
