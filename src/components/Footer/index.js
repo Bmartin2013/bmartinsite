@@ -1,11 +1,11 @@
 import React from "react";
 import 'bulma/css/bulma.min.css';
-import '../styles/styles.css'
-import FooterBtn from "./FooterBtn";
+import './styles'
+import FooterBtn from "../FooterBtn";
 import { mdiLinkedin, mdiGithub, mdiEmailOpenMultipleOutline, mdiGoogleDrive, mdiRss } from '@mdi/js';
 
 // TODO: Is there any way to automatically add buttons from metadata without adding a new component
-const Footer = ({ email, linkedin, github, medium, drive }) => {
+const FooterContainer = ({ email, linkedin, github, medium, drive }) => {
     return (
         <footer id="footer">
             <div id="sm-container">
@@ -18,4 +18,4 @@ const Footer = ({ email, linkedin, github, medium, drive }) => {
         </footer>
     );
 }
-export default Footer;
+export default FooterContainer;
