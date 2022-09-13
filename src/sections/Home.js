@@ -4,8 +4,9 @@ import SectionWrapper from "../components/SectionWrapper";
 import HeroBanner from "../components/HeroBanner/HeroBanner";
 
 const Home = () => (
-    // TODO: pass children respecting DOM hierarchy (not as a prop)
-    <SectionWrapper children={<HeroBanner title={title} subtitle={subtitle} />} />
+    <SectionWrapper >
+        <HeroBanner title={title} subtitle={subtitle} />
+    </SectionWrapper>
 );
 
 export default Home;
