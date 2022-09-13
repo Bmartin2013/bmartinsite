@@ -1,12 +1,12 @@
 import React from "react";
 import { title, subtitle } from "../data/metadata.json"
-import SectionWrapper from "../components/SectionWrapper";
+import SectionLayout from "../components/SectionLayout";
 import HeroBanner from "../components/HeroBanner/HeroBanner";
 
 const Home = () => (
-    <SectionWrapper >
+    <SectionLayout >
         <HeroBanner title={title} subtitle={subtitle} />
-    </SectionWrapper>
+    </SectionLayout>
 );
 
 export default Home;

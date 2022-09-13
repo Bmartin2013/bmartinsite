@@ -1,21 +1,18 @@
 import React from "react";
 import Codepen from "react-codepen-embed";
-import SectionWrapper from "../components/SectionWrapper";
+import SectionLayout from "../components/SectionLayout";
 
 const AboutMe = () => (
-    // TODO: pass children respecting DOM hierarchy (not as a prop)
-    <SectionWrapper children={ 
-        <>
-        <Codepen  
+    <SectionLayout>
+        <Codepen
             height="910"
-            hash="abGNLbv" 
-            defaultTab="js,result" 
+            hash="abGNLbv"
+            defaultTab="js,result"
             preview="false"
             loader={() => <div>Loading...</div>}
-            user="bmartin2013-the-decoder" 
+            user="bmartin2013-the-decoder"
         />
-        </>} 
-    />
+    </SectionLayout>
 );
 
 export default AboutMe;
