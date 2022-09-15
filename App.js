@@ -1,8 +1,7 @@
 import React from "react";
 import 'bulma/css/bulma.min.css';
-import './src/styles/styles.css'
 import ReactFullpage from '@fullpage/react-fullpage';
-// TODO: It seems that I can add a dynamic import or something similar.
+// TODO: add lazy loading here
 import Home from "./src/sections/Home";
 import AboutMe from "./src/sections/AboutMe";
 
@@ -13,8 +12,8 @@ const App = () => {
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
-            <Home/>
-            <AboutMe/>
+            <Home />
+            <AboutMe />
           </ReactFullpage.Wrapper>
         );
       }}

@@ -1,7 +1,7 @@
 import React from "react";
 import 'bulma/css/bulma.min.css';
 import './styles'
-import FooterBtn from "../FooterBtn";
+import FooterBtn from "./FooterBtn";
 
 // TODO: Is there any way to automatically add buttons from metadata without adding a new component
 const FooterComponent = ({ socialMedia }) => {
