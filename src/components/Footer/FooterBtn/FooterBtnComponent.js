@@ -5,11 +5,18 @@ import Icon from '@mdi/react'
 
 const FooterBtnComponent = ({ link, title, icon, size = 1 }) => {
     return (
-        btnIcon && <a class="span-icon" href={link} target="_blank" rel="noopener noreferrer">
+        btnIcon &&
+        <a
+            class="span-icon"
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+        >
             <span>
                 <Icon path={icon}
                     title={title}
-                    size={size} />
+                    size={size}
+                />
             </span>
         </a>
     )

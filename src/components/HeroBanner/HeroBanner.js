@@ -2,7 +2,7 @@ import React from "react";
 import 'bulma/css/bulma.min.css';
 import "./styles"
 
-const HeroBanner = ({title, subtitle}) => {
+const HeroBanner = ({ title, subtitle }) => {
     return (
         <section class="hero is-medium is-spaced">
             <div class="hero-body">
