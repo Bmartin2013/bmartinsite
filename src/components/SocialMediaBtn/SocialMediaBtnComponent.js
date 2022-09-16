@@ -3,7 +3,7 @@ import 'bulma/css/bulma.min.css';
 import './styles.css'
 import Icon from '@mdi/react'
 
-const FooterBtnComponent = ({ link, title, icon, size = 1 }) => {
+const SocialMediarBtnComponent = ({ link, title, icon, size = 1 }) => {
     return (
         btnIcon &&
         <a
@@ -21,4 +21,4 @@ const FooterBtnComponent = ({ link, title, icon, size = 1 }) => {
         </a>
     )
 }
-export default FooterBtnComponent;
+export default SocialMediarBtnComponent;

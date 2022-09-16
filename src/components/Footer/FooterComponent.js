@@ -1,13 +1,13 @@
 import React from "react";
 import 'bulma/css/bulma.min.css';
 import './styles'
-import FooterBtn from "./FooterBtn";
+import SocialMediaBtn from "../SocialMediaBtn";
 
 const FooterComponent = ({ socialMedia }) => {
   return (
     <div id="sm-container">
       {socialMedia.map(media =>
-      (<FooterBtn
+      (<SocialMediaBtn
         title={media.title}
         link={media.link}
         name={media.name}
