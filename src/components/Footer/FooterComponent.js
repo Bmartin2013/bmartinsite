@@ -11,6 +11,7 @@ const FooterComponent = ({ socialMedia }) => {
         title={media.title}
         link={media.link}
         name={media.name}
+        icon={media.icon}
       />))}
     </div>
   );

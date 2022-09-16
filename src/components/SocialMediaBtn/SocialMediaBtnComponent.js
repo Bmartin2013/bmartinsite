@@ -5,7 +5,7 @@ import Icon from '@mdi/react'
 
 const SocialMediarBtnComponent = ({ link, title, icon, size = 1 }) => {
     return (
-        btnIcon &&
+        (link & icon) &&
         <a
             class="span-icon"
             href={link}
@@ -13,7 +13,8 @@ const SocialMediarBtnComponent = ({ link, title, icon, size = 1 }) => {
             rel="noopener noreferrer"
         >
             <span>
-                <Icon path={icon}
+                <Icon
+                    path={icon}
                     title={title}
                     size={size}
                 />
