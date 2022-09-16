@@ -3,7 +3,7 @@ import 'bulma/css/bulma.min.css';
 import './styles.css'
 import Icon from '@mdi/react'
 
-const SocialMediarBtnComponent = ({ link, title, icon, size = 1 }) => {
+const MediaBtnComponent = ({ link, title, icon, size = 1 }) => {
     return (
         <a
             class="span-icon"
@@ -21,4 +21,4 @@ const SocialMediarBtnComponent = ({ link, title, icon, size = 1 }) => {
         </a>
     )
 }
-export default SocialMediarBtnComponent;
+export default MediaBtnComponent;
