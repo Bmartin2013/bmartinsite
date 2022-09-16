@@ -1,9 +1,9 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import 'bulma/css/bulma.min.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 // TODO: add lazy loading here
 import Home from "./src/sections/Home";
-import AboutMe from "./src/sections/AboutMe";
+const AboutMe = lazy(() => import("./src/sections/AboutMe"));
 
 
 const App = () => {
@@ -13,7 +13,9 @@ const App = () => {
         return (
           <ReactFullpage.Wrapper>
             <Home />
-            <AboutMe />
+            <Suspense fallback={<h1>Loading...</h1>}>
+              <AboutMe />
+            </Suspense>
           </ReactFullpage.Wrapper>
         );
       }}
