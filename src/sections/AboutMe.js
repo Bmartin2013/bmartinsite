@@ -1,16 +1,17 @@
 import React from "react";
 import Codepen from "react-codepen-embed";
 import SectionLayout from "../components/SectionLayout";
+import ABOUT_ME from "../../constants"
 
 const AboutMe = () => (
     <SectionLayout>
         <Codepen
-            height="910"
-            hash="abGNLbv"
-            defaultTab="js,result"
-            preview="false"
+            height={ABOUT_ME.CODEPEN.HEIGHT}
+            hash={ABOUT_ME.CODEPEN.HASH}
+            defaultTab={ABOUT_ME.CODEPEN.TABS}
+            preview={ABOUT_ME.CODEPEN.IS_PREVIEW}
             loader={() => <div>Loading...</div>}
-            user="bmartin2013-the-decoder"
+            user={ABOUT_ME.CODEPEN.USER}
         />
     </SectionLayout>
 );

@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import 'bulma/css/bulma.min.css';
 import ReactFullpage from '@fullpage/react-fullpage';
-// TODO: add lazy loading here
 import Home from "./src/sections/Home";
 const AboutMe = lazy(() => import("./src/sections/AboutMe"));
 
