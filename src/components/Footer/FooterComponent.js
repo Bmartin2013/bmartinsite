@@ -5,14 +5,14 @@ import MediaBtn from "../MediaBtn";
 
 const FooterComponent = ({ socialMedia }) => {
   return (
-    <div id="sm-container">
+    <p id="sm-container">
       {socialMedia.map(media =>
       (<MediaBtn
         title={media.title}
         link={media.link}
         icon={media.icon}
       />))}
-    </div>
+    </p>
   );
 }
 export default FooterComponent;

@@ -6,12 +6,11 @@ import FooterComponent from "./FooterComponent";
 
 const FooterContainer = () => {
     return (
-        <footer id="footer">
-            <div id="sm-container">
-                <FooterComponent
-                    socialMedia={socialMedia}
-                />
-            </div>
+        <footer
+            id="footer">
+            <FooterComponent
+                socialMedia={socialMedia}
+            />
         </footer>
     );
 }
